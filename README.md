@@ -41,10 +41,15 @@ Here is an example:
 
 config 'wifi-iface'
 option 'device'     'wl0'
+
 option 'network'    'wireless'
+
 option 'mode'       'ap'
+
 option 'ssid'       'MyWifiAP'
+
 option 'encryption' 'psk2'
+
 option 'key'        'secret passphrase'
 
 > Refer to the [wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless) file on this respitory to view the full contents of this configuration file.
