@@ -27,7 +27,7 @@ Edited Files:
 ### Edit wireless file:
 A wireless file should already be created in /etc/config
 
-remove "option disabled 1" from  /etc/config/[wireless](https://github.com/interminable10/NetmodeEvil/blob/master/wireless)
+remove "option disabled 1" from  /etc/config/wireless
 
 > *Note: if wireless file is not configured properly for your driver type, you may need to reconfigure. 
 > Issue these commmands to erase and reload configuration while your driver is pluged into Squirrel:
@@ -53,7 +53,7 @@ option 'key'        'secret passphrase'
 
 
 ### Build and store the network configuration:
-> Refer to the network file on this respitory to view the full contents of this configuration file.
+> Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/network) file on this respitory to view the full contents of this configuration file.
 #### nano /usr/lib/network_config/evil
 place your desired network configurations for this network mode on this file as it will not be overwritten.
 
