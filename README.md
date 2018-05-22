@@ -113,11 +113,12 @@ condig dhcp 'wan'\
 	# replace BRIDGE with EVIL for seperated network AP\
 	/usr/bin/NETMODE EVIL
 
->*Note:* We have created a custom script to first check if the squirrel was given an address from the internal DHCP server, if it has not the script will run through custom arp scans to determine internal network range. It then determines the best possible IP on the range and reconfigures itself onto the internal network. We have placed this script in the payloads/switch3 directory called "arp,sh" and the initial payload will call the script.\ 
+>*Note:* We have created a custom script to first check if the squirrel was given an address from the internal DHCP server, if it has not the script will run through custom arp scans to determine internal network range. It then determines the best possible IP on the range and reconfigures itself onto the internal network. We have placed this script in the payloads/switch3 directory called "arp,sh" and the initial payload will call the script.
+>
 >Calls arp scanner\
 >("./arp.sh")
 >	
->Check it out [arp.sh](https://github.com/crypto-cypher/arp-scanner/blob/master/arp-scanner.sh)
+>Check it out [arp.sh](https://github.com/crypto-cypher/arp-scanner)
 
 
 > Refer to the [payload](https://github.com/interminable10/NetmodeEvil/blob/master/config/payload) file on this respitory to view the full contents of this configuration file.
