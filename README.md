@@ -3,7 +3,7 @@ Custom netmode created on Hak5's Packet Squirrel
 Virmware version 1.2
 
 Edited Files:
-- /etc/config/wireless
+- [/etc/config/wireless](https://github.com/interminable10/NetmodeEvil/blob/master/wireless)
 - /usr/lib/network_config/evil
 - /usr/bin/NETMODE
 - /etc/config/DHCP
