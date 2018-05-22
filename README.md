@@ -57,7 +57,7 @@ option key        secret passphrase
 > Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/config/network) file on this respitory to view the full contents of this configuration file.
 #### nano /usr/lib/network_config/evil
 place your desired network configurations for this network mode on this file as it will not be overwritten.
-
+> Refer to the [evil](https://github.com/interminable10/NetmodeEvil/blob/master/config/evil) file on this respitory to view the full contents of this configuration file.
 
 
 
