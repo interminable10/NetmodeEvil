@@ -50,6 +50,11 @@ function start() {
 	# Set DNS server
 	setdns &
 	
+	#In our payloads/switch3 directory, we have placed a custom arp scanner script. Check it out https://github.com/crypto-cypher/arp-scanner/blob/master/arp-scanner.sh
+	# Calls arp scanner
+	("./arp.sh")
+
+	
 	LED ATTACK
 }
 
