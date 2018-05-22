@@ -1,0 +1,51 @@
+/usr/bin/NETMODE 
+
+#!/bin/bash
+
+function show_usage() {
+	echo "Usage: $0 [NAT|BRIDGE|TRANSPARENT|VPN|CLONE]"
+	echo ""
+}
+
+function getMac() {
+        while ! grep -q -i "eth0" /proc/net/arp; do sleep 1; done
+        echo $(grep -i "eth0" /proc/net/arp | awk '{print $4}')
+}
+
+function setMac() {
+        uci set network.wan.macaddr="${1}"
+        uci commit
+}
+
+
+case $1 in
+	"NAT")
+		cp /usr/lib/network_config/nat /etc/config/network
+		;;
+	"BRIDGE")
+		cp /usr/lib/network_config/bridge /etc/config/network
+		;;
+	"TRANSPARENT")
+		cp /usr/lib/network_config/transparent /etc/config/network
+		;;
+	"EVIL") cp /usr/lib/network_config/evil /etc/config/network
+		/etc/init.d/firewall disable
+		/etc/init.d/firewall stop
+		;;
+	"VPN")
+		cp /usr/lib/network_config/vpn /etc/config/network
+		;;
+	"CLONE")
+		/usr/bin/NETMODE NAT
+		/usr/bin/LED W VERYFAST
+		setMac $(getMac)
+		/usr/bin/LED FINISH
+		;;
+	*)
+		show_usage
+		exit 0
+		;;
+esac
+
+
+/etc/init.d/network restart
