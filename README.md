@@ -18,8 +18,11 @@ Edited Files:
 #### opkg update
 
 
+
 ### Install hostapd:
 #### opkg install hostapd
+
+
 
 ### Edit wireless file:
 A wireless file should already be created in /etc/config
@@ -36,20 +39,26 @@ Once the device(network adapter) interface on /etc/config/wireless is properly c
 
 Here is an example: 
 
-⋅⋅⋅ config 'wifi-iface'
-        option 'device'     'wl0'
-        option 'network'    'wireless'
-        option 'mode'       'ap'
-        option 'ssid'       'MyWifiAP'
-        option 'encryption' 'psk2'
-        option 'key'        'secret passphrase'
+config 'wifi-iface'
+option 'device'     'wl0'
+option 'network'    'wireless'
+option 'mode'       'ap'
+option 'ssid'       'MyWifiAP'
+option 'encryption' 'psk2'
+option 'key'        'secret passphrase'
 
 > Refer to the wireless file on this respitory to view the full contents of this configuration file.
+
+
+
 
 ### Build and store the network configuration:
 > Refer to the network file on this respitory to view the full contents of this configuration file.
 #### nano /usr/lib/network_config/evil
 place your desired network configurations for this network mode on this file as it will not be overwritten.
+
+
+
 
 
 ### Edit contents of /usr/bin/NETMODE:
@@ -61,6 +70,10 @@ Within the case statement of this file, a new netmode named "EVIL" should be add
 		;;
     
 > Refer to the netmode file on this respitory to view the full contents of this configuration file.
+
+
+
+
 
 ### Editing DHCP file:
 For the internal DHCP server to run how we want on the Squirrel, we must configure the network 'wan' to be ignored and the network 'wireless' to run. 
@@ -78,6 +91,11 @@ condig dhcp 'wan'
 	option ignore '1'
 	
  > Refer to the DHCP file on this respitory to view the full contents of this configuration file.
+
+
+
+
+
 
 ### Editing payloads/switch3/payload.sh:
 
