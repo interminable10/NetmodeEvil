@@ -3,11 +3,11 @@ Custom netmode created on Hak5's Packet Squirrel
 Virmware version 1.2
 
 Edited Files:
-- /etc/config/[wireless](https://github.com/interminable10/NetmodeEvil/blob/master/wireless)
-- /usr/lib/network_config/[evil](https://github.com/interminable10/NetmodeEvil/blob/master/evil)
-- /usr/bin/[NETMODE](https://github.com/interminable10/NetmodeEvil/blob/master/netmode)
-- /etc/config/[DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/DHCP)
-- payloads/switch3/[payload.sh](https://github.com/interminable10/NetmodeEvil/blob/master/payload)
+- /etc/config/[wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless)
+- /usr/lib/network_config/[evil](https://github.com/interminable10/NetmodeEvil/blob/master/config/evil)
+- /usr/bin/[NETMODE](https://github.com/interminable10/NetmodeEvil/blob/master/config/netmode)
+- /etc/config/[DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/config/DHCP)
+- payloads/switch3/[payload.sh](https://github.com/interminable10/NetmodeEvil/blob/master/config/payload)
 
 
 ## Steps:
@@ -47,13 +47,13 @@ option 'ssid'       'MyWifiAP'
 option 'encryption' 'psk2'
 option 'key'        'secret passphrase'
 
-> Refer to the [wireless](https://github.com/interminable10/NetmodeEvil/blob/master/wireless) file on this respitory to view the full contents of this configuration file.
+> Refer to the [wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless) file on this respitory to view the full contents of this configuration file.
 
 
 
 
 ### Build and store the network configuration:
-> Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/network) file on this respitory to view the full contents of this configuration file.
+> Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/config/network) file on this respitory to view the full contents of this configuration file.
 #### nano /usr/lib/network_config/evil
 place your desired network configurations for this network mode on this file as it will not be overwritten.
 
@@ -69,7 +69,7 @@ Within the case statement of this file, a new netmode named "EVIL" should be add
 		/etc/init.d/firewall stop
 		;;
     
-> Refer to the [netmode](https://github.com/interminable10/NetmodeEvil/blob/master/netmode) file on this respitory to view the full contents of this configuration file.
+> Refer to the [netmode](https://github.com/interminable10/NetmodeEvil/blob/master/config/netmode) file on this respitory to view the full contents of this configuration file.
 
 
 
@@ -90,7 +90,7 @@ condig dhcp 'wan'
 	option interface 'wan'
 	option ignore '1'
 	
- > Refer to the [DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/DHCP) file on this respitory to view the full contents of this configuration file.
+ > Refer to the [DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/config/DHCP) file on this respitory to view the full contents of this configuration file.
 
 
 
@@ -107,7 +107,7 @@ condig dhcp 'wan'
 	# replace BRIDGE with EVIL for seperated network AP
 	/usr/bin/NETMODE EVIL
   
-> Refer to the [payload](https://github.com/interminable10/NetmodeEvil/blob/master/payload) file on this respitory to view the full contents of this configuration file.
+> Refer to the [payload](https://github.com/interminable10/NetmodeEvil/blob/master/config/payload) file on this respitory to view the full contents of this configuration file.
 
 
 
