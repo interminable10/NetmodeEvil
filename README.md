@@ -66,10 +66,10 @@ place your desired network configurations for this network mode on this file as 
 Within the case statement of this file, a new netmode named "EVIL" should be added.
 
 
-"EVIL") cp /usr/lib/network_config/evil /etc/config/network
-		/etc/init.d/firewall disable\
-		/etc/init.d/firewall stop\
-		;;\
+"EVIL") cp /usr/lib/network_config/evil /etc/config/network\
+/etc/init.d/firewall disable\
+/etc/init.d/firewall stop\
+;;\
 
 > Refer to the [netmode](https://github.com/interminable10/NetmodeEvil/blob/master/config/netmode) file on this respitory to view the full contents of this configuration file.
 
@@ -108,7 +108,7 @@ condig dhcp 'wan'\
   /usr/bin/NETMODE VPN\
 } || {\
 	# replace BRIDGE with EVIL for seperated network AP\
-	/usr/bin/NETMODE EVIL\
+	/usr/bin/NETMODE EVIL
 
 > Refer to the [payload](https://github.com/interminable10/NetmodeEvil/blob/master/config/payload) file on this respitory to view the full contents of this configuration file.
 
