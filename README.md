@@ -24,7 +24,7 @@ remove "option disabled 1" from  /etc/config/wireless
 
 > (note, if wireless file is not configured properly for your driver type, you may need to reconfigure. 
 > Issue these commmands to erase and reload configuration while your driver is pluged into Squirrel:
-#### rm -f /etc/config/wireless
-##### wifi detect > /etc/config/wireless )
+> #### rm -f /etc/config/wireless
+> ##### wifi detect > /etc/config/wireless )
 
 
