@@ -15,12 +15,12 @@ Edited Files:
 (Make sure squirrel is connected to internet)
 
 ### Update packages:
-#### opkg update
+#### root@squirrel# opkg update
 
 
 
 ### Install hostapd:
-#### opkg install hostapd
+#### root@squirrel# opkg install hostapd
 
 
 
@@ -31,8 +31,8 @@ remove "option disabled 1" from  /etc/config/wireless
 
 > *Note: if wireless file is not configured properly for your driver type, you may need to reconfigure. 
 > Issue these commmands to erase and reload configuration while your driver is pluged into Squirrel:
-> #### rm -f /etc/config/wireless
-> #### wifi detect > /etc/config/wireless 
+> #### root@squirrel# rm -f /etc/config/wireless
+> #### root@squirrel# wifi detect > /etc/config/wireless 
 
 
 Once the device(network adapter) interface on /etc/config/wireless is properly configured, all the file needs is a wifi interface defining the network that sits on top of the device(network adapter).
