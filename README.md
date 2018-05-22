@@ -45,7 +45,7 @@ option network    wireless\
 option mode       ap\
 option ssid       MyWifiAP\
 option encryption psk2\
-option key        secret passphrase\
+option key        secret passphrase
 
 
 > Refer to the [wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless) file on this respitory to view the full contents of this configuration file.
@@ -69,7 +69,7 @@ Within the case statement of this file, a new netmode named "EVIL" should be add
 "EVIL") cp /usr/lib/network_config/evil /etc/config/network\
 /etc/init.d/firewall disable\
 /etc/init.d/firewall stop\
-;;\
+;;
 
 > Refer to the [netmode](https://github.com/interminable10/NetmodeEvil/blob/master/config/netmode) file on this respitory to view the full contents of this configuration file.
 
@@ -90,7 +90,7 @@ config dhcp 'wireless'\
 
 condig dhcp 'wan'\
 	option interface 'wan'\
-	option ignore '1'\
+	option ignore '1'
 
  > Refer to the [DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/config/DHCP) file on this respitory to view the full contents of this configuration file.
 
