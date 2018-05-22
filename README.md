@@ -86,7 +86,7 @@ config dhcp 'wireless'\
 	option limit '150'\
 	option leasetime '12h'\
 	option dhcpv6 'server'\
-	option ra 'server'\
+	option ra 'server'
 
 condig dhcp 'wan'\
 	option interface 'wan'\
