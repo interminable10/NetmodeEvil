@@ -3,11 +3,11 @@ Custom netmode created on Hak5's Packet Squirrel
 Virmware version 1.2
 
 Edited Files:
-1. /etc/config/wireless
-2. /usr/lib/network_config/evil
-3. /usr/bin/NETMODE
-4. /etc/config/DHCP
-5. payloads/switch3/payload.sh
+- /etc/config/wireless
+- /usr/lib/network_config/evil
+- /usr/bin/NETMODE
+- /etc/config/DHCP
+- payloads/switch3/payload.sh
 
 
 ## Steps:
@@ -39,7 +39,7 @@ Once the device(network adapter) interface on /etc/config/wireless is properly c
 
 Here is an example: 
 
-config 'wifi-iface'
+- config 'wifi-iface'
 option 'device'     'wl0'
 option 'network'    'wireless'
 option 'mode'       'ap'
