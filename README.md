@@ -39,7 +39,7 @@ Once the device(network adapter) interface on /etc/config/wireless is properly c
 
 Here is an example: 
 
-- config 'wifi-iface'
+config 'wifi-iface'
 option 'device'     'wl0'
 option 'network'    'wireless'
 option 'mode'       'ap'
