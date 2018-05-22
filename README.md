@@ -2,6 +2,8 @@
 Custom netmode created on Hak5's Packet Squirrel
 Virmware version 1.2
 
+MITM device with wireless AP to create foothold in target intranet
+
 Edited Files:
 - [/etc/config/wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless)
 - [/usr/lib/network_config/evil](https://github.com/interminable10/NetmodeEvil/blob/master/config/evil)
