@@ -4,10 +4,10 @@ Virmware version 1.2
 
 Edited Files:
 - [/etc/config/wireless](https://github.com/interminable10/NetmodeEvil/blob/master/wireless)
-- /usr/lib/network_config/evil
-- /usr/bin/NETMODE
-- /etc/config/DHCP
-- payloads/switch3/payload.sh
+- [/usr/lib/network_config/evil](https://github.com/interminable10/NetmodeEvil/blob/master/evil)
+- [/usr/bin/NETMODE](https://github.com/interminable10/NetmodeEvil/blob/master/netmode)
+- [/etc/config/DHCP](https://github.com/interminable10/NetmodeEvil/blob/master/DHCP)
+- [payloads/switch3/payload.sh](https://github.com/interminable10/NetmodeEvil/blob/master/payload)
 
 
 ## Steps:
