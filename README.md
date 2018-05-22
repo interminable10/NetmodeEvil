@@ -39,14 +39,14 @@ Once the device(network adapter) interface on /etc/config/wireless is properly c
 
 Here is an example: 
 
-<p>`config wifi-iface
-option device     wl0
-option network    wireless
+`config wifi-iface
+option device     wl0 <br/>
+option network    wireless <br/>
 option mode       ap
 option ssid       MyWifiAP 
 option encryption psk2 
 option key        secret passphrase
-`</p>
+`
 
 > Refer to the [wireless](https://github.com/interminable10/NetmodeEvil/blob/master/config/wireless) file on this respitory to view the full contents of this configuration file.
 
