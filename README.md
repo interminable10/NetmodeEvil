@@ -58,7 +58,7 @@ option key        secret passphrase
 
 ### Build and store the network configuration:
 
-> *Note:* After shutdown, the /etc/config/network file gets erased. In order for the squirrel to follow the custom >configurations you set, you must place them on a seperate file. 
+> *Note:* After shutdown, the /etc/config/network file gets erased. In order for the squirrel to follow the custom > configurations you set, you must place them on a seperate file. 
 
 > Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/config/network) file on this respitory to view the full contents of this configuration file.
 
