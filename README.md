@@ -57,17 +57,23 @@ option key        secret passphrase
 
 
 ### Build and store the network configuration:
+
+> *Note:* After shutdown, the /etc/config/network file gets erased. In order for the squirrel to follow the custom >configurations you set, you must place them on a seperate file. 
+
 > Refer to the [network](https://github.com/interminable10/NetmodeEvil/blob/master/config/network) file on this respitory to view the full contents of this configuration file.
-#### nano /usr/lib/network_config/evil
-place your desired network configurations for this network mode on this file as it will not be overwritten.
-> Refer to the [evil](https://github.com/interminable10/NetmodeEvil/blob/master/config/evil) file on this respitory to view the full contents of this configuration file.
 
+The above link outlines our custom configurations for this topology. After the configs are built, you must write them onto a new file.
 
+All of the netmodes are stored in the /usr/lib/network_config directory. To keep the structure the same, we created a file /usr/lib/network_config/evil to write our configs to.
+
+#### nano /usr/lib/network_config/evil  (place network configurations here)
 
 
 ### Edit contents of /usr/bin/NETMODE:
-Within the case statement of this file, a new netmode named "EVIL" should be added.
+Within the case statement of this file, a new netmode named "EVIL" should be added. 
+The "cp" command copies the custom configs from the /usr/lib/network_config/evil to the /etc/config/network file.
 
+Example:
 
 "EVIL") cp /usr/lib/network_config/evil /etc/config/network\
 /etc/init.d/firewall disable\
