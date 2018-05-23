@@ -1,6 +1,6 @@
 # NetmodeEvil :+1:
 Custom netmode created on Hak5's Packet Squirrel
-Virmware version 1.2
+Firmware version 1.2
 
 MITM device with wireless AP to create foothold in target intranet
 
